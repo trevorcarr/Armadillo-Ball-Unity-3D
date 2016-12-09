@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour {
         setCountText();
         clearLevelText.gameObject.SetActive(false);
     }
-	
+
 	// Update is called once per frame
 	void Update () {
 	

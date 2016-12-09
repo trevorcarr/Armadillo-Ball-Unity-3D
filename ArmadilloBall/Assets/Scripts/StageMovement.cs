@@ -17,7 +17,7 @@ public class StageMovement : MonoBehaviour {
     void FixedUpdate()
     {
         #if UNITY_STANDALONE || UNITY_EDITOR
-            float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
+            float tiltAroundZ = -1*Input.GetAxis("Horizontal") * tiltAngle;
             float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
         #elif UNITY_ANDROID || UNITY_IOS || UNITY_WP_8_1
             float tiltAroundX = Input.acceleration.x;
