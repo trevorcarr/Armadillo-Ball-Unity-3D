@@ -3,19 +3,24 @@ using System.Collections;
 
 public class cameraFollow : MonoBehaviour {
 
-    public GameObject player;
-    private Vector3 playerOffset;
+    public GameObject target;
+    public float damping = 1;
+    Vector3 offset;
 
-    // Use this for initialization
     void Start()
     {
-        playerOffset = transform.position - player.transform.position;
+        offset = target.transform.position - transform.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
-        transform.LookAt(player.transform);
-        transform.position = player.transform.position + playerOffset;
+        float currentAngle = transform.eulerAngles.y;
+        float desiredAngle = 0; // target.transform.eulerAngles.y;
+        float angle = Mathf.LerpAngle(currentAngle, desiredAngle, Time.deltaTime * damping);
+
+        Quaternion rotation = Quaternion.Euler(0, angle, 0);
+        transform.position = target.transform.position - (rotation * offset);
+
+        transform.LookAt(target.transform);
     }
 }
