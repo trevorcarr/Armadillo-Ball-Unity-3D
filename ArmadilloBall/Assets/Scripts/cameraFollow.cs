@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//camera follows the direction it's facing; **still not working
+using UnityEngine;
 using System.Collections;
 
 public class cameraFollow : MonoBehaviour {
