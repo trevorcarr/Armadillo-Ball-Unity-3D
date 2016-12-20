@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class CameraFollow : MonoBehaviour
+public class cameraFollow : MonoBehaviour
 {
 
     // The target we are following
