@@ -74,9 +74,9 @@ public class PlayerScript : MonoBehaviour {
 
             AudioSource.PlayClipAtPoint (completeLevel, transform.position);
 
-            if(min < lastBestMin)
+            if(min < lastBestMin || lastBestMin == 0)
             {
-                if(sec < lastBestSec)
+                if(sec < lastBestSec || lastBestSec == 0)
                 {
                     PlayerPrefs.SetInt("BestSecTime", (int)sec);
                     PlayerPrefs.SetInt("BestMinTime", (int)min);

@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\MoveScene.cs" />
     <Compile Include="Assets\Scripts\MyUnitySingleton.cs" />
     <Compile Include="Assets\Scripts\OutofBounds.cs" />
+    <Compile Include="Assets\Scripts\PivotMover.cs" />
     <Compile Include="Assets\Scripts\PlayMusicScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />

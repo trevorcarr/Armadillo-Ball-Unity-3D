@@ -20,13 +20,21 @@ public class cameraFollow : MonoBehaviour
     // Place the script in the Camera-Control group in the component menu
     [AddComponentMenu("Camera-Control/Smooth Follow")]
 
+    void Start()
+    {
+
+        //transform.position = new Vector3(target.position.x, height, target.position.z);
+        //transform.LookAt(target);
+    }
+
     void LateUpdate()
     {
         // Early out if we don't have a target
         if (!target) return;
 
         Vector3 direction = target.GetComponent<Rigidbody>().velocity.normalized;
-        if (direction.magnitude == 0) return;
+        if (direction.magnitude == 0)
+            direction = Vector3.forward;
 
         // Calculate the current rotation angles
         float wantedRotationAngle = Vector2.Angle(new Vector2(0, 1), new Vector2(direction.x, direction.z));
