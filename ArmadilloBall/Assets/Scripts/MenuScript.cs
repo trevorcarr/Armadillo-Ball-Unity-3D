@@ -25,7 +25,7 @@ public class MenuScript : MonoBehaviour
     public void AdventureMode()
     {
         resetPrefs();
-        PlayerPrefs.SetInt("GameMode", 0);
+        PlayerPrefs.SetInt("GameMode", 2);
         SceneManager.LoadScene(3); //loads level 1, for now
     }
 
@@ -76,35 +76,34 @@ public class MenuScript : MonoBehaviour
         resetPrefs();
         SceneManager.LoadScene(9); //loads level 7
     }
-    /*
-        public void Level8()
-        {
-            resetPrefs();
-            SceneManager.LoadScene (10); //loads level 8
-        }
+    public void Level8()
+    {
+        resetPrefs();
+        SceneManager.LoadScene(10); //loads level 8
+    }
 
-        public void Level9()
-        {
-            resetPrefs();
-            SceneManager.LoadScene (11); //loads level 9
-        }
+    public void Level9()
+    {
+        resetPrefs();
+        SceneManager.LoadScene(11); //loads level 9
+    }
 
-        public void Level10()
-        {
-            resetPrefs();
-            SceneManager.LoadScene (12); //loads level 10
-        }
+    public void Level10()
+    {
+        resetPrefs();
+        SceneManager.LoadScene(12); //loads level 10
+    }
 
-        public void HowToPlay()
-        {
-            SceneManager.LoadScene ();
-        }
+    /*public void HowToPlay()
+    {
+        SceneManager.LoadScene();
+    }
 
-        public void Credits()
-        {
-            SceneManager.LoadScene ();
-        }
-    */
+    public void Credits()
+    {
+        SceneManager.LoadScene();
+    }*/
+
 
     public void resetPrefs()
     {

@@ -88,5 +88,15 @@
     <Compile Include="Assets\Scripts\cameraRotate.cs" />
     <Compile Include="Assets\Scripts\followCamera.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Images\Skyboxes\ely_nevada\ely_nevada.shader" />
+    <None Include="Assets\Images\Skyboxes\mp_dejavu\license.txt" />
+    <None Include="Assets\Images\Skyboxes\mp_dejavu\mp_dejavu.shader" />
+    <None Include="Assets\Images\Skyboxes\mp_seeingred\license.txt" />
+    <None Include="Assets\Images\Skyboxes\mp_seeingred\mp_seeingred.shader" />
+    <None Include="Assets\Images\Skyboxes\mp_sorbin\license.txt" />
+    <None Include="Assets\Images\Skyboxes\mp_sorbin\mp_sorbin.shader" />
+    <None Include="Assets\Images\Skyboxes\mp_sorbin\readme.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -14,12 +14,14 @@ public class PlayerScript : MonoBehaviour {
     public float sec, min, currentSec, currentMin;
     private float startingSec, startingMin;
     private Scene currentScene;
+    private int gameMode;
 
-	public int totalPickups;
+    public int totalPickups;
 
     // Use this for initialization
     void Start () {
         currentScene = SceneManager.GetActiveScene();
+        gameMode = PlayerPrefs.GetInt("GameMode");
 
         count = PlayerPrefs.GetInt("CurrentScore");
         setCountText();
@@ -46,22 +48,20 @@ public class PlayerScript : MonoBehaviour {
 			PlayerPrefs.SetInt ("MinTime", (int)min);
 			PlayerPrefs.SetInt ("CurrentScore", count);
 			clearLevelText.gameObject.SetActive (true);
-
-            int gameMode = PlayerPrefs.GetInt("GameMode");
-            if(gameMode == 0)
-            {
-                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
-                yield return new WaitForSeconds(fadeTime);
-                SceneManager.LoadScene(currentScene.buildIndex + 1);
-            }
-            else
+            if(gameMode == 1)
             {
                 float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
                 yield return new WaitForSeconds(fadeTime);
                 SceneManager.LoadScene(2);
             }
+            else if (gameMode == 2)
+            {
+                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
+                yield return new WaitForSeconds(fadeTime);
+                SceneManager.LoadScene(currentScene.buildIndex + 1);
+            }
 
-		}
+        }
         else if (other.gameObject.CompareTag("finalGoal"))
         {
             PlayerPrefs.SetInt("BestSecTime", (int)sec);
@@ -69,18 +69,15 @@ public class PlayerScript : MonoBehaviour {
             PlayerPrefs.SetInt("HighScore", count);
             clearLevelText.gameObject.SetActive(true);
 
-            int gameMode = PlayerPrefs.GetInt("GameMode");
-            if (gameMode == 0)
-            {
-                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
-                yield return new WaitForSeconds(fadeTime);
-                SceneManager.LoadScene(0);
-            }
-            else
+            if(gameMode == 1)
             {
                 float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
                 yield return new WaitForSeconds(fadeTime);
                 SceneManager.LoadScene(2);
+            }
+            else if (gameMode == 2)
+            {
+                SceneManager.LoadScene(0);
             }
 
         }
