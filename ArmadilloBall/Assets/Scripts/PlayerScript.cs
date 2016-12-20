@@ -8,9 +8,10 @@ public class PlayerScript : MonoBehaviour {
     public int count;
     public Text countText;
     public Text clearLevelText;
-    public Text timeText;
+    public Text totalTimeText;
+    public Text currentTimeText;
 
-    public float sec, min;
+    public float sec, min, currentSec, currentMin;
     private float startingSec, startingMin;
     private Scene currentScene;
 
@@ -24,12 +25,13 @@ public class PlayerScript : MonoBehaviour {
         setCountText();
         clearLevelText.gameObject.SetActive(false);
  
-		startingSec = 0;//PlayerPrefs.GetInt("SecTime");
-		startingMin = 0;//PlayerPrefs.GetInt("MinTime");
+		startingSec = PlayerPrefs.GetInt("SecTime");
+		startingMin = PlayerPrefs.GetInt("MinTime");
     }
 
 	// Update is called once per frame
 	void Update () {
+        setTotalTimeText();
         setTimeText();
 	}
 
@@ -55,16 +57,21 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
-    void setTimeText()
+    void setTotalTimeText()
     {
 		min = (int)(Time.timeSinceLevelLoad / 60) + startingMin;
 		sec = (int)((Time.timeSinceLevelLoad + startingSec) % 60);
-        timeText.text = min.ToString("00") + ":" + sec.ToString("00");
+        totalTimeText.text = "Total Time : " + min.ToString("00") + ":" + sec.ToString("00");
     }
-
-    void setCountText()
+    void setTimeText()
     {
-        countText.text = "Count : " + count.ToString();
+        currentMin = (int)(Time.timeSinceLevelLoad / 60);
+        currentSec = (int)(Time.timeSinceLevelLoad % 60);
+        currentTimeText.text = currentMin.ToString("00") + ":" + currentSec.ToString("00");
+    }
+        void setCountText()
+    {
+        countText.text = "Score : " + count.ToString();
     }
 
     void reset()
