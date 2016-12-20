@@ -16,7 +16,8 @@ public class PlayerScript : MonoBehaviour {
     private Scene currentScene;
     private int gameMode;
 
-    public int totalPickups;
+	public AudioClip collectSound;
+	public AudioClip completeLevel;
 
     // Use this for initialization
     void Start () {
@@ -40,10 +41,12 @@ public class PlayerScript : MonoBehaviour {
     IEnumerator OnTriggerEnter(Collider other)
     {
 		if (other.gameObject.CompareTag ("pickUps")) {
+			AudioSource.PlayClipAtPoint (collectSound, transform.position);
 			other.gameObject.SetActive (false);
 			count++;
 			setCountText ();
 		} else if (other.gameObject.CompareTag ("goal")) {
+			AudioSource.PlayClipAtPoint (completeLevel, transform.position);
 			PlayerPrefs.SetInt ("SecTime", (int)sec);
 			PlayerPrefs.SetInt ("MinTime", (int)min);
 			PlayerPrefs.SetInt ("CurrentScore", count);
@@ -77,7 +80,7 @@ public class PlayerScript : MonoBehaviour {
             }
             else if (gameMode == 2)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(15);
             }
 
         }

@@ -51,7 +51,9 @@
      <Compile Include="Assets\Scripts\HighNoon.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MoveScene.cs" />
+     <Compile Include="Assets\Scripts\MyUnitySingleton.cs" />
      <Compile Include="Assets\Scripts\OutofBounds.cs" />
+     <Compile Include="Assets\Scripts\PlayMusicScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\StageMovement.cs" />

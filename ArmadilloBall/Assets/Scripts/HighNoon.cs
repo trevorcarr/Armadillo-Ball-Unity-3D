@@ -18,6 +18,6 @@ public class HighNoon : MonoBehaviour {
     void Update()
     {
         bestTimeText.text = "Best Time : " + min.ToString("00") + ":" + sec.ToString("00");
-        highScoreText.text = "Score : " + count.ToString();
+        highScoreText.text = "Highest Score : " + count.ToString();
     }
 }
