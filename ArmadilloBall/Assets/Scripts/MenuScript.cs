@@ -23,11 +23,13 @@ public class MenuScript : MonoBehaviour
     public void AdventureMode()
     {
         resetPrefs();
+        PlayerPrefs.SetInt("GameMode", 0);
         SceneManager.LoadScene(3); //loads level 1, for now
     }
 
     public void TimeTrialLevelSelect()
     {
+        PlayerPrefs.SetInt("GameMode", 1);
         SceneManager.LoadScene(2); //loads level select
     }
 

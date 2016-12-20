@@ -46,9 +46,21 @@ public class PlayerScript : MonoBehaviour {
 			PlayerPrefs.SetInt ("MinTime", (int)min);
 			PlayerPrefs.SetInt ("CurrentScore", count);
 			clearLevelText.gameObject.SetActive (true);
-			float fadeTime = GameObject.Find ("Stage").GetComponent<Fading> ().BeginFade (1);
-			yield return new WaitForSeconds (fadeTime);
-			SceneManager.LoadScene (currentScene.buildIndex + 1);
+
+            int gameMode = PlayerPrefs.GetInt("GameMode");
+            if(gameMode == 0)
+            {
+                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
+                yield return new WaitForSeconds(fadeTime);
+                SceneManager.LoadScene(currentScene.buildIndex + 1);
+            }
+            else
+            {
+                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
+                yield return new WaitForSeconds(fadeTime);
+                SceneManager.LoadScene(2);
+            }
+
 		}
 
         else if (other.gameObject.CompareTag("deadZone"))
