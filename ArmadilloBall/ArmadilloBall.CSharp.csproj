@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Fading.cs" />
     <Compile Include="Assets\Scripts\GoalScript.cs" />
+    <Compile Include="Assets\Scripts\HighNoon.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\MoveScene.cs" />
     <Compile Include="Assets\Scripts\OutofBounds.cs" />

@@ -62,7 +62,28 @@ public class PlayerScript : MonoBehaviour {
             }
 
 		}
+        else if (other.gameObject.CompareTag("finalGoal"))
+        {
+            PlayerPrefs.SetInt("BestSecTime", (int)sec);
+            PlayerPrefs.SetInt("BestMinTime", (int)min);
+            PlayerPrefs.SetInt("HighScore", count);
+            clearLevelText.gameObject.SetActive(true);
 
+            int gameMode = PlayerPrefs.GetInt("GameMode");
+            if (gameMode == 0)
+            {
+                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
+                yield return new WaitForSeconds(fadeTime);
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
+                float fadeTime = GameObject.Find("Stage").GetComponent<Fading>().BeginFade(1);
+                yield return new WaitForSeconds(fadeTime);
+                SceneManager.LoadScene(2);
+            }
+
+        }
         else if (other.gameObject.CompareTag("deadZone"))
         {
             reset();
