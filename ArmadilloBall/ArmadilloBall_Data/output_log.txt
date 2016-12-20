@@ -2,77 +2,101 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics (ID=0xf31)
-    Vendor:   Intel
-    VRAM:     928 MB
-    Driver:   10.18.10.4425
+    Renderer: NVIDIA GeForce GTX 860M (ID=0x1392)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   20.19.15.4531
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.089 seconds
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Danise\Documents\Danise Edra\SDSU\Fall 2016\CS583\Unity Projects\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Desktop\School\Fa2016\CS583\UNITY\CS583 - 3D Game Project\armadillo-ball\ArmadilloBall\ArmadilloBall_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
 (Filename:  Line: 382)
 
-desktop: 1366x768 60Hz; virtual: 2390x768 at 0,0
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.208061 ms
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2598 -> priority: 1 
+UnloadTime: 1.181558 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: abe8 -> priority: 1 
+  Thread -> id: 9268 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 14.095297 ms
+UnloadTime: 5.177428 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 410.
-Total: 0.754295 ms (FindLiveObjects: 0.089324 ms CreateObjectMapping: 0.030720 ms MarkObjects: 0.609674 ms  DeleteObjects: 0.022685 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.231637 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 490.
-Total: 0.719794 ms (FindLiveObjects: 0.057186 ms CreateObjectMapping: 0.029774 ms MarkObjects: 0.616291 ms  DeleteObjects: 0.016068 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 418.
+Total: 0.316122 ms (FindLiveObjects: 0.029970 ms CreateObjectMapping: 0.013548 ms MarkObjects: 0.263982 ms  DeleteObjects: 0.007389 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.598387 ms
+UnloadTime: 0.395358 ms
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 410.
-Total: 0.635195 ms (FindLiveObjects: 0.084125 ms CreateObjectMapping: 0.030247 ms MarkObjects: 0.498137 ms  DeleteObjects: 0.021267 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.090380 ms
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 400.
-Total: 0.558159 ms (FindLiveObjects: 0.071837 ms CreateObjectMapping: 0.030247 ms MarkObjects: 0.412593 ms  DeleteObjects: 0.042535 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 418.
+Total: 0.284099 ms (FindLiveObjects: 0.024222 ms CreateObjectMapping: 0.013958 ms MarkObjects: 0.241402 ms  DeleteObjects: 0.004105 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.172560 ms
+UnloadTime: 0.816170 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 400.
-Total: 0.480650 ms (FindLiveObjects: 0.034028 ms CreateObjectMapping: 0.027884 ms MarkObjects: 0.408340 ms  DeleteObjects: 0.009452 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 411.
+Total: 0.315301 ms (FindLiveObjects: 0.037359 ms CreateObjectMapping: 0.023401 ms MarkObjects: 0.244686 ms  DeleteObjects: 0.007800 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.906004 ms
+UnloadTime: 0.462688 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 490.
-Total: 0.770363 ms (FindLiveObjects: 0.040644 ms CreateObjectMapping: 0.030720 ms MarkObjects: 0.664970 ms  DeleteObjects: 0.033083 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 433.
+Total: 0.314480 ms (FindLiveObjects: 0.031201 ms CreateObjectMapping: 0.013958 ms MarkObjects: 0.263572 ms  DeleteObjects: 0.004105 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.391663 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 466.
+Total: 0.317354 ms (FindLiveObjects: 0.034075 ms CreateObjectMapping: 0.014779 ms MarkObjects: 0.263161 ms  DeleteObjects: 0.003694 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.460635 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 422.
+Total: 0.322280 ms (FindLiveObjects: 0.030380 ms CreateObjectMapping: 0.016011 ms MarkObjects: 0.257413 ms  DeleteObjects: 0.017243 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.375652 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 805.
+Total: 0.352250 ms (FindLiveObjects: 0.047213 ms CreateObjectMapping: 0.020937 ms MarkObjects: 0.278351 ms  DeleteObjects: 0.004105 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.523449 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 805.
+Total: 0.341987 ms (FindLiveObjects: 0.053781 ms CreateObjectMapping: 0.020527 ms MarkObjects: 0.263161 ms  DeleteObjects: 0.004105 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.510722 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 805.
+Total: 0.389610 ms (FindLiveObjects: 0.045981 ms CreateObjectMapping: 0.020527 ms MarkObjects: 0.317354 ms  DeleteObjects: 0.004516 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.544387 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 805.
+Total: 0.367441 ms (FindLiveObjects: 0.045981 ms CreateObjectMapping: 0.020937 ms MarkObjects: 0.295184 ms  DeleteObjects: 0.004105 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.311509 ms
+UnloadTime: 0.625676 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 437.
-Total: 0.658826 ms (FindLiveObjects: 0.084125 ms CreateObjectMapping: 0.030247 ms MarkObjects: 0.526494 ms  DeleteObjects: 0.017486 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 440.
+Total: 0.436413 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.014369 ms MarkObjects: 0.326386 ms  DeleteObjects: 0.052960 ms)
 

@@ -67,10 +67,23 @@ public class PlayerScript : MonoBehaviour {
         }
         else if (other.gameObject.CompareTag("finalGoal"))
         {
-			AudioSource.PlayClipAtPoint (completeLevel, transform.position);
-			PlayerPrefs.SetInt("BestSecTime", (int)sec);
-            PlayerPrefs.SetInt("BestMinTime", (int)min);
-            PlayerPrefs.SetInt("HighScore", count);
+            int lastBestSec, lastBestMin, lastBestScore;
+            lastBestSec = PlayerPrefs.GetInt("BestSecTime");
+            lastBestMin = PlayerPrefs.GetInt("BestMinTime");
+            lastBestScore = PlayerPrefs.GetInt("HighScore");
+
+            AudioSource.PlayClipAtPoint (completeLevel, transform.position);
+
+            if(min < lastBestMin)
+            {
+                if(sec < lastBestSec)
+                {
+                    PlayerPrefs.SetInt("BestSecTime", (int)sec);
+                    PlayerPrefs.SetInt("BestMinTime", (int)min);
+                }
+            }
+            if(count > lastBestScore)   PlayerPrefs.SetInt("HighScore", count);
+
             clearLevelText.gameObject.SetActive(true);
 
             if(gameMode == 1)
