@@ -14,9 +14,7 @@ Trevor Carr
 
 How to Play:
 -Controls:  Arrow keys / WASD
-
--
-Control the stage to help Armando the Armadillo collect the prizes 
+-Control the stage to help Armando the Armadillo collect the prizes 
  before reaching the goal, but don't let him fall off the edge!
 -Two Game Modes to choose from:
 -Adventure Mode - Go through all levels and shoot for your fastest
@@ -56,10 +54,8 @@ https://forum.unity3d.com/threads/rotate-the-camera-around-the-object.47353/
 Fading between scenes
 https://unity3d.com/learn/tutorials/topics/graphics/fading-between-scenes
 Roll A Ball
-
 https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial
 PlayerPrefs
 http://answers.unity3d.com/questions/27973/idiots-guide-to-player-prefs.html
-
 Scrollable List
-https://www.youtube.com/watch?v=xiW8zEXpQ04
+https://www.youtube.com/watch?v=xiW8zEXpQ04
