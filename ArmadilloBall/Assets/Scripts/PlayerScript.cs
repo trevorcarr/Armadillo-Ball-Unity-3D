@@ -67,6 +67,10 @@ public class PlayerScript : MonoBehaviour {
         }
         else if (other.gameObject.CompareTag("finalGoal"))
         {
+            PlayerPrefs.SetInt("SecTime", (int)sec);
+            PlayerPrefs.SetInt("MinTime", (int)min);
+            PlayerPrefs.SetInt("CurrentScore", count);
+
             int lastBestSec, lastBestMin, lastBestScore;
             lastBestSec = PlayerPrefs.GetInt("BestSecTime");
             lastBestMin = PlayerPrefs.GetInt("BestMinTime");
@@ -106,8 +110,8 @@ public class PlayerScript : MonoBehaviour {
 
     void setTotalTimeText()
     {
-		min = (int)(Time.timeSinceLevelLoad / 60) + startingMin;
-		sec = (int)((Time.timeSinceLevelLoad + startingSec) % 60);
+        min = (int)((Time.timeSinceLevelLoad + startingSec) / 60) + startingMin;
+        sec = (int)((Time.timeSinceLevelLoad + startingSec) % 60);
         totalTimeText.text = "Total Time : " + min.ToString("00") + ":" + sec.ToString("00");
     }
     void setTimeText()
