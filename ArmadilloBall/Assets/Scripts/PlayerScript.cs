@@ -40,12 +40,21 @@ public class PlayerScript : MonoBehaviour {
 
     IEnumerator OnTriggerEnter(Collider other)
     {
-		if (other.gameObject.CompareTag ("pickUps")) {
-			AudioSource.PlayClipAtPoint (collectSound, transform.position);
-			other.gameObject.SetActive (false);
-			count++;
-			setCountText ();
-		} else if (other.gameObject.CompareTag ("goal")) {
+        if (other.gameObject.CompareTag("pickUps"))
+        {
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            other.gameObject.SetActive(false);
+            count++;
+            setCountText();
+        }
+        if (other.gameObject.CompareTag("pickUps2"))
+        {
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            other.gameObject.SetActive(false);
+            count = count + 5;
+            setCountText();
+        }
+        else if (other.gameObject.CompareTag ("goal")) {
 			AudioSource.PlayClipAtPoint (completeLevel, transform.position);
 			PlayerPrefs.SetInt ("SecTime", (int)sec);
 			PlayerPrefs.SetInt ("MinTime", (int)min);
